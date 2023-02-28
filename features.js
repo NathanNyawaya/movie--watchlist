@@ -68,7 +68,7 @@ function renderMovie(single) {
 // adding tp watch movie-list
 function addToWatchlist(movieToAdd) {
   if (movieToAdd) {
-    console.log(movieToAdd);
+    // console.log(movieToAdd);
     let exists = myMovies.includes(movieToAdd);
     if (!exists) {
       if(myMovies == null){
