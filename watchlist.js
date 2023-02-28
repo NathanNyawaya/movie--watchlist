@@ -4,7 +4,7 @@ const savedMoviePage = document.getElementById("root");
 let myList = JSON.parse(localStorage.getItem("MyMovies"))
 
 
-console.log(myList)
+// console.log(myList)
 if(myList.length > 0){
     savedMoviePage.innerHTML = ""
 }
