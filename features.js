@@ -71,7 +71,9 @@ function addToWatchlist(movieToAdd) {
     console.log(movieToAdd);
     let exists = myMovies.includes(movieToAdd);
     if (!exists) {
-      myMovies = savedMovies;
+      if(myMovies == null){
+        myMovies = savedMovies;
+      }
       myMovies.push(movieToAdd);
       // console.log(myMovies);
       localStorage.setItem("MyMovies", JSON.stringify(myMovies));
